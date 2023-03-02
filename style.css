@@ -39,6 +39,7 @@ header {
    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
    margin: 0 0 100px 0;
 }
+/*
 .bill-mahoney,
 .shae-lee,
 .griff {
@@ -119,7 +120,11 @@ header {
    right: 2px;
    padding: 0 0 8px 0;
 }
-
+*/
+.team {
+   width: 80%;
+   min-height: 200px;
+}
 /* Footer */
 footer {
    text-align: center;
