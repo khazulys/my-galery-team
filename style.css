@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Poppins:wght@400;600&display=swap');
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif
+}
+header {
+   display: grid;
+   margin-left: 40px;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.heading-title {
+   margin: 50px 0;
+}
+.heading-title h3 {
+   font-weight: 600;
+   font-size: 30px;
+}
+.sub-title {
+   margin: 50px 0;
+   width: 90%;
+}
+.sub-title h4 {
+   font-size: 20px;
+   text-transform: uppercase;
+}
+.sub-title p {
+   padding: 20px 0;
+}
+
+/* Section Galery */
+
+.galery {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   margin: 0 0 100px 0;
+}
+.bill-mahoney,
+.shae-lee,
+.griff {
+   margin: 50px 50px 0 40px;
+}
+.saba-cabera,
+.skylah-lu,
+.john {
+ margin: 150px 0 0 10px;
+}
+.bill-mahoney img,
+.saba-cabera img,
+.shae-lee img,
+.skylah-lu img, .griff img, .john img {
+   width: 150px;
+   height: 210px;
+}
+.bill-mahoney h4.jobdesk {
+   position: absolute;
+   transform: rotate(90deg);
+   text-transform: uppercase;
+   font-family: 'PT Serif', serif;
+   font-weight: 400;
+   font-size: 11px;
+   bottom: 18.5rem;
+   left: 9.8rem;
+}
+.saba-cabera h4.jobdesk {
+   position: absolute;
+   transform: rotate(90deg);
+   font-family: 'PT Serif', serif;
+   font-weight: 400;
+   font-size: 11px;
+   text-transform: uppercase;
+   bottom: 12.3rem;
+   right: 2px;
+   padding: 0 0 15px 0;
+}
+.shae-lee h4.jobdesk {
+   position: absolute;
+   transform: rotate(90deg);
+   font-family: 'PT Serif', serif;
+   font-weight: 400;
+   font-size: 11px;
+   text-transform: uppercase;
+   bottom: -4.8rem;
+   left: 10.8rem;
+}
+.skylah-lu h4.jobdesk {
+   position: absolute;
+   transform: rotate(90deg);
+   font-family: 'PT Serif', serif;
+   font-weight: 400;
+   font-size: 11px;
+   text-transform: uppercase;
+   bottom: -11.9rem;
+   right: 2px;
+   padding: 0 0 10px 0;
+}
+.griff h4.jobdesk {
+   position: absolute;
+   transform: rotate(90deg);
+   font-family: 'PT Serif', serif;
+   font-weight: 400;
+   font-size: 11px;
+   text-transform: uppercase;
+   top: 78.5rem;
+   left: 10.8rem;
+}
+.john h4.jobdesk {
+   position: absolute;
+   transform: rotate(90deg);
+   font-family: 'PT Serif', serif;
+   font-weight: 400;
+   font-size: 11px;
+   text-transform: uppercase;
+   top: 84.5rem;
+   right: 2px;
+   padding: 0 0 8px 0;
+}
+
+/* Footer */
+footer {
+   text-align: center;
+   font-weight: 400;
+   font-size: 15px;
+}
+
+/* Responsive*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Style untuk tablet */
+  main {
+     margin: 0 35px 0 35px;
+  }
+  .heading-title h3 {
+     font-size: 40px;
+     /*padding-left: 30px;*/
+     transform: translateX(-40px);
+  }
+  .sub-title {
+     margin-top: 60px;
+     transform: translateX(17%);
+  }
+  .sub-title h4 {
+     font-size: 25px;
+  }
+  .sub-title p {
+     font-size: 18px;
+  }
+  .galery {
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .galery * h4.jobdesk {
+     font-size: 15px;
+  }
+  .galery * h4.name {
+     font-size: 18px;
+  }
+  .bill-mahoney img,
+  .saba-cabera img,
+  .shae-lee img,
+  .skylah-lu img, .griff img, .john img {
+     width: 250px;
+     height: 350px;
+  }
+  .bill-mahoney {
+     margin-left: 0;
+  }
+  .skylah-lu, .john {
+     margin: 0 0 30px 0;
+  }
+  .saba-cabera {
+     margin-left: 10px;
+  }
+  .griff {
+     margin: 100px 0 0 10px;
+  }
+  .john, .shae-lee {
+     margin-left: 25px;
+  }
+  .bill-mahoney h4.jobdesk,
+  .saba-cabera h4.jobdesk,
+  .shae-lee h4.jobdesk,
+  .skylah-lu h4.jobdesk,
+  .griff h4.jobdesk, .john h4.jobdesk {
+     position: relative;
+     top: 0;
+     left: 0;
+  }
+  .bill-mahoney h4.jobdesk {
+     top: -16.7rem;
+     left: 8.8rem;
+  }
+  .saba-cabera h4.jobdesk {
+     top: -15.8rem;
+     left: 7.2rem;
+  }
+  .shae-lee h4.jobdesk {
+     top: -17.5rem;
+     left: 9.8rem;
+  }
+  .skylah-lu h4.jobdesk {
+     top: -15.5rem;
+     left: 7rem;
+  }
+  .griff h4.jobdesk {
+     top: -15.5rem;
+     left: 7.7rem;
+  }
+  .john h4.jobdesk {
+     top: -16.2rem;
+     left: 8rem;
+  }
+}
